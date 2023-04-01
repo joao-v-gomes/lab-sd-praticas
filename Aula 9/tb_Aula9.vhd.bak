@@ -1,0 +1,21 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use ieee.std_logic_unsigned.all;
+
+entity tb_Aula9 is
+end tb_Aula9;
+
+architecture teste of tb_Aula9 is
+
+component Aula9 is
+	port (x: in std_logic_vector(3 downto 0);
+			f: out std_logic_vector(11 downto 0));
+end component;
+
+signal x: std_logic_vector(3 downto 0);
+signal y: std_logic_vector(11 downto 0);
+
+begin
+instancia_Aula9: Aula9 port map(x=>x,f=>f);
+x <= x"0", x"1" after 20 ns, x"2" after 40 ns, x"7" after 60 ns;
+end teste;
