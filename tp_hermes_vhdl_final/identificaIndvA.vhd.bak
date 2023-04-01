@@ -1,0 +1,43 @@
+-- VHDL Code for AND gate
+
+-- Header file declaration
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+-- Entity declaration
+
+entity identificaIndvA is
+
+    port(D1 : in std_logic;      -- AND gate input
+         D2 : in std_logic;      -- AND gate input
+			D3 : in std_logic;      -- AND gate input
+			D4 : in std_logic;      -- AND gate input
+			D5 : in std_logic;      -- AND gate input
+			
+			L1 : in std_logic;      -- AND gate input
+			L2 : in std_logic;      -- AND gate input
+			L3 : in std_logic;      -- AND gate input
+			L4 : in std_logic;      -- AND gate input
+			L5 : in std_logic;      -- AND gate input
+			
+         A : out std_logic);    -- AND gate output
+
+end identificaIndvA;
+
+-- Dataflow Modelling Style
+-- Architecture definition
+
+architecture identificaIndvA_logic of identificaIndvA is
+
+ begin
+   process (D1,D2,D3,D4,D5,L1,L2,L3,L4,L5)
+		begin
+			if (D1 = L1) AND (D2 = L2) AND (D3 = L3) AND (D4 = L4) AND (D5 = L5) THEN
+				A <= '1';
+			ELSE
+				A <= '0';
+			end if;
+		end process;
+
+end identificaIndvA_logic; 

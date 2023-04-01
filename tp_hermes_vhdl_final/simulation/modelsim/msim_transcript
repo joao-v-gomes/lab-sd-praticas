@@ -1,0 +1,82 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do Cofre_vhdl_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/João Gomes/Desktop/UFMG/SD/TP/tp_vhdl_final/compLetra.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity compLetra
+# -- Compiling architecture compLetra_logic of compLetra
+# vcom -93 -work work {C:/Users/João Gomes/Desktop/UFMG/SD/TP/tp_vhdl_final/compDigito.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity compDigito
+# -- Compiling architecture compDigito_logic of compDigito
+# vcom -93 -work work {C:/Users/João Gomes/Desktop/UFMG/SD/TP/tp_vhdl_final/IdentificaIndividuo.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity IdentificaIndividuo
+# -- Compiling architecture IdentificaIndividuo_logic of IdentificaIndividuo
+# vcom -93 -work work {C:/Users/João Gomes/Desktop/UFMG/SD/TP/tp_vhdl_final/Identifica3individuos.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Identifica3Individuos
+# -- Compiling architecture Identifica3Individuos_logic of Identifica3Individuos
+# vcom -93 -work work {C:/Users/João Gomes/Desktop/UFMG/SD/TP/tp_vhdl_final/Cofre_vhdl.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Cofre_vhdl
+# -- Compiling architecture Cofre_logic of Cofre_vhdl
+# vcom -93 -work work {C:/Users/João Gomes/Desktop/UFMG/SD/TP/tp_vhdl_final/contador_mod3.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity contador_mod3
+# -- Compiling architecture contador_mod3_moore of contador_mod3
+# 
+# vcom -93 -work work {C:/Users/João Gomes/Desktop/UFMG/SD/TP/tp_vhdl_final/testeBench_cofre.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity testeBench_cofre
+# -- Compiling architecture testeBench_cofre_logic of testeBench_cofre
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs="+acc"  testeBench_cofre
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testeBench_cofre 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.testebench_cofre(testebench_cofre_logic)
+# Loading work.cofre_vhdl(cofre_logic)
+# Loading work.contador_mod3(contador_mod3_moore)
+# Loading work.identifica3individuos(identifica3individuos_logic)
+# Loading work.identificaindividuo(identificaindividuo_logic)
+# Loading work.completra(completra_logic)
+# Loading work.compdigito(compdigito_logic)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 130 ns

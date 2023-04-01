@@ -1,0 +1,22 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {C:/Users/Aluno/Documents/tp_vhdl/compLetra.vhd}
+vcom -93 -work work {C:/Users/Aluno/Documents/tp_vhdl/compDigito.vhd}
+vcom -93 -work work {C:/Users/Aluno/Documents/tp_vhdl/IdentificaIndividuo.vhd}
+vcom -93 -work work {C:/Users/Aluno/Documents/tp_vhdl/Identifica3individuos.vhd}
+vcom -93 -work work {C:/Users/Aluno/Documents/tp_vhdl/Cofre_vhdl.vhd}
+vcom -93 -work work {C:/Users/Aluno/Documents/tp_vhdl/contador_mod3.vhd}
+
+vcom -93 -work work {C:/Users/Aluno/Documents/tp_vhdl/testeBench_cofre.vhd}
+
+vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs="+acc"  testeBench_cofre
+
+add wave *
+view structure
+view signals
+run 105 ns

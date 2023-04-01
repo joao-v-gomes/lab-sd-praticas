@@ -1,0 +1,56 @@
+l i br ar y i eee;
+use i eee. st d_l ogi c_1164. al l ;
+use i eee. st d_l ogi c_ar i t h. al l ;
+ent i t y Laser Di st Measur er i s
+por t ( cl k, r st : i n st d_l ogi c;
+B, S: i n st d_l ogi c;
+L: out st d_l ogi c;
+D: out unsi gned( 15 downt o 0)
+) ;
+end Laser Di st Measur er ;
+ar chi t ect ur e behavi or of Laser Di st Measur er i s
+t ype st at et ype i s ( S0, S1, S2, S3, S4) ;
+si gnal st at e : st at et ype;
+si gnal Dct r : unsi gned( 15 downt o 0) ;
+const ant U_ZERO :
+unsi gned ( 15 downt o 0) : = " 0000000000000000" ;
+const ant U_ONE : unsi gned( 0 downt o 0) : = " 1" ;
+begi n
+st at emachi ne: pr ocess( cl k, r st )
+begi n
+i f ( r st =' 1' ) t hen
+L <= ' 0' ;
+D <= U_ZERO;
+Dct r <= U_ZERO;
+st at e <= S0; - - i ni t i al st at e
+el si f ( cl k=' 1' and cl k' event ) t hen
+case st at e i s
+when S0 =>
+L <= ' 0' ; - - l aser of f
+D <= U_ZERO; - - cl ear D
+st at e <= S1
+when S1 =>
+Dct r <= U_ZERO; - - r eset count
+i f ( B=' 1' ) t hen
+st at e <= S2;
+el se
+st at e <= S1;
+end i f ;
+when S2 =>
+L <= ' 1' ; - - l aser on
+st at e <= S3;
+when S3 =>
+L <= ' 0' ; - - l aser of f
+Dct r <= Dct r + 1;
+i f ( S=' 1' ) t hen
+st at e <= S4;
+el se
+st at e <= S3;
+end i f ;
+when S4 =>
+D <= SHR( Dct r , U_ONE) ; - - cal cul at e D
+st at e <= S1;
+end case;
+end i f ;
+end pr ocess;
+end behavi or ;
