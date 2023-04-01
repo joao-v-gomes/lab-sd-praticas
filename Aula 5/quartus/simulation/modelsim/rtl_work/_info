@@ -1,0 +1,95 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Aluno/Desktop/Lab SD - Joao, Joao, Marcelle/Aula 5/quartus/simulation/modelsim
+Ealu
+Z1 w1664912088
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R0
+Z5 8C:/Users/Aluno/Desktop/Lab SD - Joao, Joao, Marcelle/Aula 5/quartus/alu.vhd
+Z6 FC:/Users/Aluno/Desktop/Lab SD - Joao, Joao, Marcelle/Aula 5/quartus/alu.vhd
+l0
+L5 1
+Vz<cfk@z<JhW[?2;C2kK_D0
+!s100 ]=UIm6DCb?izT=S8gN:dB0
+Z7 OV;C;2020.1;71
+31
+Z8 !s110 1664912818
+!i10b 1
+Z9 !s108 1664912818.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/Aluno/Desktop/Lab SD - Joao, Joao, Marcelle/Aula 5/quartus/alu.vhd|
+Z11 !s107 C:/Users/Aluno/Desktop/Lab SD - Joao, Joao, Marcelle/Aula 5/quartus/alu.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Aarch
+R2
+R3
+R4
+DEx4 work 3 alu 0 22 z<cfk@z<JhW[?2;C2kK_D0
+!i122 0
+l36
+L32 40
+VWlGQlif;WS=GFeN79fC1l3
+!s100 X?e^3MdGN4KCJgcF^`Y1i2
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Etb_alu
+Z14 w1664912498
+R3
+R4
+!i122 1
+R0
+Z15 8C:/Users/Aluno/Desktop/Lab SD - Joao, Joao, Marcelle/Aula 5/quartus/tb_alu.vhd
+Z16 FC:/Users/Aluno/Desktop/Lab SD - Joao, Joao, Marcelle/Aula 5/quartus/tb_alu.vhd
+l0
+L4 1
+V<:P8U9FOYBa19PhRYcl?33
+!s100 6H7`BJcW@XN58dGlL]URb3
+R7
+31
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/Aluno/Desktop/Lab SD - Joao, Joao, Marcelle/Aula 5/quartus/tb_alu.vhd|
+!s107 C:/Users/Aluno/Desktop/Lab SD - Joao, Joao, Marcelle/Aula 5/quartus/tb_alu.vhd|
+!i113 1
+R12
+R13
+Ateste
+R3
+R4
+DEx4 work 6 tb_alu 0 22 <:P8U9FOYBa19PhRYcl?33
+!i122 1
+l24
+L7 40
+VIV;c9JaB`YWXSP<8@Dez00
+!s100 `>5c5cBFaJ0^hT>G=HB<B0
+R7
+31
+R8
+!i10b 1
+R9
+R17
+Z18 !s107 C:/Users/Aluno/Desktop/Lab SD - Joao, Joao, Marcelle/Aula 5/quartus/tb_alu.vhd|
+!i113 1
+R12
+R13
