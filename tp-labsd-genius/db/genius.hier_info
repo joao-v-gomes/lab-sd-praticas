@@ -1,0 +1,13 @@
+|genius
+entrada_azul => process_0.IN0
+entrada_amarelo => process_0.IN1
+entrada_verde => ~NO_FANOUT~
+entrada_Vermelho => ~NO_FANOUT~
+entrada_preto => ~NO_FANOUT~
+led_azul << process_0.DB_MAX_OUTPUT_PORT_TYPE
+led_amarelo << <GND>
+led_verde << <GND>
+led_vermelho << <GND>
+led_ligado << comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
