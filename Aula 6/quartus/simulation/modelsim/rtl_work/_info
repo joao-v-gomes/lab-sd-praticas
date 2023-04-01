@@ -1,0 +1,95 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Aluno/Downloads/Lab SD - Joao, Joao, Marcelle/Aula 6/quartus/simulation/modelsim
+Emean_4_clocks
+Z1 w1665012499
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R0
+Z5 8C:/Users/Aluno/Downloads/Lab SD - Joao, Joao, Marcelle/Aula 6/quartus/mean_4_clocks.vhd
+Z6 FC:/Users/Aluno/Downloads/Lab SD - Joao, Joao, Marcelle/Aula 6/quartus/mean_4_clocks.vhd
+l0
+L5 1
+V`CeXC>;PY;:5HAgHCHd?@1
+!s100 ^A>M?7bek4_3`7k3kSd0=0
+Z7 OV;C;2020.1;71
+31
+Z8 !s110 1665012826
+!i10b 1
+Z9 !s108 1665012826.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/Aluno/Downloads/Lab SD - Joao, Joao, Marcelle/Aula 6/quartus/mean_4_clocks.vhd|
+Z11 !s107 C:/Users/Aluno/Downloads/Lab SD - Joao, Joao, Marcelle/Aula 6/quartus/mean_4_clocks.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Aarch
+R2
+R3
+R4
+DEx4 work 13 mean_4_clocks 0 22 `CeXC>;PY;:5HAgHCHd?@1
+!i122 0
+l24
+L23 36
+VUII80Ba_z6dDU2mMVAz3G3
+!s100 0zff>S79T4[0K8TdK>RQR1
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Etb_mean_4_clocks
+Z14 w1665012819
+R3
+R4
+!i122 1
+R0
+Z15 8C:/Users/Aluno/Downloads/Lab SD - Joao, Joao, Marcelle/Aula 6/quartus/tb_mean_4_clocks.vhd
+Z16 FC:/Users/Aluno/Downloads/Lab SD - Joao, Joao, Marcelle/Aula 6/quartus/tb_mean_4_clocks.vhd
+l0
+L4 1
+VUTz4gMQM7niTb9VMn?ch73
+!s100 APLnZ`=[;obdJ4I3MVbi?3
+R7
+31
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/Aluno/Downloads/Lab SD - Joao, Joao, Marcelle/Aula 6/quartus/tb_mean_4_clocks.vhd|
+!s107 C:/Users/Aluno/Downloads/Lab SD - Joao, Joao, Marcelle/Aula 6/quartus/tb_mean_4_clocks.vhd|
+!i113 1
+R12
+R13
+Ateste
+R3
+R4
+DEx4 work 16 tb_mean_4_clocks 0 22 UTz4gMQM7niTb9VMn?ch73
+!i122 1
+l23
+L7 34
+V9GIEL0Z9hP2Kl26[=oO2^2
+!s100 gk__j5@lZG_6bi]U2`0MA2
+R7
+31
+R8
+!i10b 1
+R9
+R17
+Z18 !s107 C:/Users/Aluno/Downloads/Lab SD - Joao, Joao, Marcelle/Aula 6/quartus/tb_mean_4_clocks.vhd|
+!i113 1
+R12
+R13
