@@ -1,0 +1,97 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Aluno/Desktop/Lab SD - Joao, Joao, Marcelle/Aula 4/quartus/simulation/modelsim
+Ecomparador
+Z1 w1664902957
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R0
+Z5 8C:/Users/Aluno/Desktop/Lab SD - Joao, Joao, Marcelle/Aula 4/quartus/comparador.vhd
+Z6 FC:/Users/Aluno/Desktop/Lab SD - Joao, Joao, Marcelle/Aula 4/quartus/comparador.vhd
+l0
+L5 1
+V8SMR[VH5ib>7LoW5<75=41
+!s100 l;B6FfzLAi>ThleK4m`bO2
+Z7 OV;C;2020.1;71
+31
+Z8 !s110 1664904918
+!i10b 1
+Z9 !s108 1664904918.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/Aluno/Desktop/Lab SD - Joao, Joao, Marcelle/Aula 4/quartus/comparador.vhd|
+Z11 !s107 C:/Users/Aluno/Desktop/Lab SD - Joao, Joao, Marcelle/Aula 4/quartus/comparador.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Artl
+R2
+R3
+R4
+DEx4 work 10 comparador 0 22 8SMR[VH5ib>7LoW5<75=41
+!i122 0
+l24
+L23 20
+V0K?5HB1Fj4]`h<lW_J:0Z1
+!s100 <Q@ilWa2m35PH@NhbNS:43
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Etb_comparador
+Z14 w1664904000
+R2
+R3
+R4
+!i122 1
+R0
+Z15 8C:/Users/Aluno/Desktop/Lab SD - Joao, Joao, Marcelle/Aula 4/quartus/tb_comparador.vhd
+Z16 FC:/Users/Aluno/Desktop/Lab SD - Joao, Joao, Marcelle/Aula 4/quartus/tb_comparador.vhd
+l0
+L5 1
+VlFYC9m]V;ozoND>Z;F4R`1
+!s100 AKmkDZ0eB82H5eORkHfOV3
+R7
+31
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/Aluno/Desktop/Lab SD - Joao, Joao, Marcelle/Aula 4/quartus/tb_comparador.vhd|
+!s107 C:/Users/Aluno/Desktop/Lab SD - Joao, Joao, Marcelle/Aula 4/quartus/tb_comparador.vhd|
+!i113 1
+R12
+R13
+Ateste
+R2
+R3
+R4
+DEx4 work 13 tb_comparador 0 22 lFYC9m]V;ozoND>Z;F4R`1
+!i122 1
+l24
+L8 22
+V;k0KLC:nWlhjPJFm3I7>50
+!s100 f?3Em[k3X>iJ0l5UDOWXh2
+R7
+31
+R8
+!i10b 1
+R9
+R17
+Z18 !s107 C:/Users/Aluno/Desktop/Lab SD - Joao, Joao, Marcelle/Aula 4/quartus/tb_comparador.vhd|
+!i113 1
+R12
+R13
