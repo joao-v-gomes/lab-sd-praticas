@@ -1,0 +1,27 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+entity tb_fulladder is
+end tb_fulladder;
+
+architecture teste of tb_fulladder is
+
+component fulladder is
+    port ( Cin : in std_logic;
+           x   : in std_logic;
+           y   : in std_logic;
+           s   : out std_logic;
+           Cout : out std_logic
+        );
+end component;
+
+
+signal Cin,x,y,s,Cout: std_logic;
+
+begin
+
+instancia_fulladder: fulladder port map(Cin=>Cin,x=>x,y=>y,s=>s,Cout=>Cout);
+x <= '0', '1' after 3 ns, '0' after 5 ns, '1' after 7 ns;
+y <= '1', '0' after 2 ns, '1' after 4 ns, '0' after 6 ns;
+Cin <= '0', '1' after 3 ns, '0' after 5 ns, '1' after 7 ns;
+end teste;

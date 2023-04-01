@@ -1,0 +1,261 @@
+TimeQuest Timing Analyzer report for Adder4
+Wed Oct 19 14:48:23 2022
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Fmax Summary
+  6. Setup Summary
+  7. Hold Summary
+  8. Recovery Summary
+  9. Removal Summary
+ 10. Minimum Pulse Width Summary
+ 11. Propagation Delay
+ 12. Minimum Propagation Delay
+ 13. Clock Transfers
+ 14. Report TCCS
+ 15. Report RSKM
+ 16. Unconstrained Paths
+ 17. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; Adder4                                                            ;
+; Device Family      ; MAX II                                                            ;
+; Device Name        ; EPM240T100C3                                                      ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Slow Model                                                        ;
+; Rise/Fall Delays   ; Unavailable                                                       ;
++--------------------+-------------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 2      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
+----------
+; Clocks ;
+----------
+No clocks to report.
+
+
+----------------
+; Fmax Summary ;
+----------------
+No paths to report.
+
+
+-----------------
+; Setup Summary ;
+-----------------
+No paths to report.
+
+
+----------------
+; Hold Summary ;
+----------------
+No paths to report.
+
+
+--------------------
+; Recovery Summary ;
+--------------------
+No paths to report.
+
+
+-------------------
+; Removal Summary ;
+-------------------
+No paths to report.
+
+
+-------------------------------
+; Minimum Pulse Width Summary ;
+-------------------------------
+No paths to report.
+
+
++----------------------------------------------------+
+; Propagation Delay                                  ;
++------------+-------------+-------+----+----+-------+
+; Input Port ; Output Port ; RR    ; RF ; FR ; FF    ;
++------------+-------------+-------+----+----+-------+
+; Cin        ; Cout        ; 8.750 ;    ;    ; 8.750 ;
+; Cin        ; s[0]        ; 5.791 ;    ;    ; 5.791 ;
+; Cin        ; s[1]        ; 7.599 ;    ;    ; 7.599 ;
+; Cin        ; s[2]        ; 7.515 ;    ;    ; 7.515 ;
+; Cin        ; s[3]        ; 9.051 ;    ;    ; 9.051 ;
+; x[0]       ; Cout        ; 8.900 ;    ;    ; 8.900 ;
+; x[0]       ; s[0]        ; 5.938 ;    ;    ; 5.938 ;
+; x[0]       ; s[1]        ; 7.749 ;    ;    ; 7.749 ;
+; x[0]       ; s[2]        ; 7.665 ;    ;    ; 7.665 ;
+; x[0]       ; s[3]        ; 9.201 ;    ;    ; 9.201 ;
+; x[1]       ; Cout        ; 7.868 ;    ;    ; 7.868 ;
+; x[1]       ; s[1]        ; 6.716 ;    ;    ; 6.716 ;
+; x[1]       ; s[2]        ; 6.633 ;    ;    ; 6.633 ;
+; x[1]       ; s[3]        ; 8.169 ;    ;    ; 8.169 ;
+; x[2]       ; Cout        ; 6.746 ;    ;    ; 6.746 ;
+; x[2]       ; s[2]        ; 5.511 ;    ;    ; 5.511 ;
+; x[2]       ; s[3]        ; 7.047 ;    ;    ; 7.047 ;
+; x[3]       ; Cout        ; 6.480 ;    ;    ; 6.480 ;
+; x[3]       ; s[3]        ; 6.530 ;    ;    ; 6.530 ;
+; y[0]       ; Cout        ; 8.463 ;    ;    ; 8.463 ;
+; y[0]       ; s[0]        ; 5.501 ;    ;    ; 5.501 ;
+; y[0]       ; s[1]        ; 7.312 ;    ;    ; 7.312 ;
+; y[0]       ; s[2]        ; 7.228 ;    ;    ; 7.228 ;
+; y[0]       ; s[3]        ; 8.764 ;    ;    ; 8.764 ;
+; y[1]       ; Cout        ; 7.088 ;    ;    ; 7.088 ;
+; y[1]       ; s[1]        ; 5.936 ;    ;    ; 5.936 ;
+; y[1]       ; s[2]        ; 5.853 ;    ;    ; 5.853 ;
+; y[1]       ; s[3]        ; 7.389 ;    ;    ; 7.389 ;
+; y[2]       ; Cout        ; 7.002 ;    ;    ; 7.002 ;
+; y[2]       ; s[2]        ; 5.767 ;    ;    ; 5.767 ;
+; y[2]       ; s[3]        ; 7.303 ;    ;    ; 7.303 ;
+; y[3]       ; Cout        ; 6.577 ;    ;    ; 6.577 ;
+; y[3]       ; s[3]        ; 6.628 ;    ;    ; 6.628 ;
++------------+-------------+-------+----+----+-------+
+
+
++----------------------------------------------------+
+; Minimum Propagation Delay                          ;
++------------+-------------+-------+----+----+-------+
+; Input Port ; Output Port ; RR    ; RF ; FR ; FF    ;
++------------+-------------+-------+----+----+-------+
+; Cin        ; Cout        ; 8.750 ;    ;    ; 8.750 ;
+; Cin        ; s[0]        ; 5.791 ;    ;    ; 5.791 ;
+; Cin        ; s[1]        ; 7.599 ;    ;    ; 7.599 ;
+; Cin        ; s[2]        ; 7.515 ;    ;    ; 7.515 ;
+; Cin        ; s[3]        ; 9.051 ;    ;    ; 9.051 ;
+; x[0]       ; Cout        ; 8.900 ;    ;    ; 8.900 ;
+; x[0]       ; s[0]        ; 5.938 ;    ;    ; 5.938 ;
+; x[0]       ; s[1]        ; 7.749 ;    ;    ; 7.749 ;
+; x[0]       ; s[2]        ; 7.665 ;    ;    ; 7.665 ;
+; x[0]       ; s[3]        ; 9.201 ;    ;    ; 9.201 ;
+; x[1]       ; Cout        ; 7.868 ;    ;    ; 7.868 ;
+; x[1]       ; s[1]        ; 6.716 ;    ;    ; 6.716 ;
+; x[1]       ; s[2]        ; 6.633 ;    ;    ; 6.633 ;
+; x[1]       ; s[3]        ; 8.169 ;    ;    ; 8.169 ;
+; x[2]       ; Cout        ; 6.746 ;    ;    ; 6.746 ;
+; x[2]       ; s[2]        ; 5.511 ;    ;    ; 5.511 ;
+; x[2]       ; s[3]        ; 7.047 ;    ;    ; 7.047 ;
+; x[3]       ; Cout        ; 6.480 ;    ;    ; 6.480 ;
+; x[3]       ; s[3]        ; 6.530 ;    ;    ; 6.530 ;
+; y[0]       ; Cout        ; 8.463 ;    ;    ; 8.463 ;
+; y[0]       ; s[0]        ; 5.501 ;    ;    ; 5.501 ;
+; y[0]       ; s[1]        ; 7.312 ;    ;    ; 7.312 ;
+; y[0]       ; s[2]        ; 7.228 ;    ;    ; 7.228 ;
+; y[0]       ; s[3]        ; 8.764 ;    ;    ; 8.764 ;
+; y[1]       ; Cout        ; 7.088 ;    ;    ; 7.088 ;
+; y[1]       ; s[1]        ; 5.936 ;    ;    ; 5.936 ;
+; y[1]       ; s[2]        ; 5.853 ;    ;    ; 5.853 ;
+; y[1]       ; s[3]        ; 7.389 ;    ;    ; 7.389 ;
+; y[2]       ; Cout        ; 7.002 ;    ;    ; 7.002 ;
+; y[2]       ; s[2]        ; 5.767 ;    ;    ; 5.767 ;
+; y[2]       ; s[3]        ; 7.303 ;    ;    ; 7.303 ;
+; y[3]       ; Cout        ; 6.577 ;    ;    ; 6.577 ;
+; y[3]       ; s[3]        ; 6.628 ;    ;    ; 6.628 ;
++------------+-------------+-------+----+----+-------+
+
+
+-------------------
+; Clock Transfers ;
+-------------------
+Nothing to report.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 9     ; 9    ;
+; Unconstrained Input Port Paths  ; 33    ; 33   ;
+; Unconstrained Output Ports      ; 5     ; 5    ;
+; Unconstrained Output Port Paths ; 33    ; 33   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Oct 19 14:48:20 2022
+Info: Command: quartus_sta Adder4 -c Adder4
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (306004): Started post-fitting delay annotation
+Info (306005): Delay annotation completed successfully
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'Adder4.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info (332159): No clocks to report
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 370 megabytes
+    Info: Processing ended: Wed Oct 19 14:48:23 2022
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
+
+

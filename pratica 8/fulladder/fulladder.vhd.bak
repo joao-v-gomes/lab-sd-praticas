@@ -1,0 +1,22 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+entity fulladder is
+    port ( Cin : in std_logic;
+           x   : in std_logic;
+           y   : in std_logic;
+           s   : out std_logic;
+           Cout : out std_logic
+        );
+end fulladder;
+architecture RTL OF fulladder is
+signal tmp: std_logic_vector(1 downto 0);
+begin
+	process(x,y,Cin)
+	begin
+ tmp <= ('0'& x) + ('0'& y) +('0'& Cin) ;
+   end process;
+   s <= tmp(0);
+   Cout <= tmp(1);
+end RTL ;

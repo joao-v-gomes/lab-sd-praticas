@@ -1,0 +1,30 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+ 
+entity tb_Adder4 is
+end tb_Adder4;
+	
+end Adder4;
+ 
+architecture tesre of tb_Adder4 is
+ 
+ 
+component tb_Adder4
+	Port ( x : in STD_LOGIC_VECTOR (3 downto 0);
+			 y : in STD_LOGIC_VECTOR (3 downto 0);
+			 Cin : in STD_LOGIC;
+			 s : out STD_LOGIC_VECTOR (3 downto 0);
+			 Cout : out STD_LOGIC);
+end component;
+ 
+ – Declaração de porte intermediário
+signal x,y,s:STD_LOGIC_VECTOR (3 downto 0);
+signal Cin, Cout: STD_LOGIC;
+begin
+ 
+ instancia_Adder4: Adder4 port map ( Cin=> Cin, x=>x, y=>y, s=>s,Cout=>Cout);
+ x <= "0000", "0010" after 5ns ,"0110" after 10ns, "1000" after 15ns, 
+y   <= "0001", "0101" after 4ns ,"0111" after 9ns, "1001" after 14ns, 
+Cin <= '0', '1' after 5ns ,'0' after 10ns, '1' after 15ns, 
+ 
+end structural;
