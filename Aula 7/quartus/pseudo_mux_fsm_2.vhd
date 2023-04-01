@@ -1,0 +1,132 @@
+-- pseudo_mux - A Finite State Machine that mimics the behavior of mux
+-- Copyright (C) 2018  Digital Systems Group - UFMG
+-- 
+-- This program is free software; you can redistribute it and/or modify
+-- it under the terms of the GNU General Public License as published by
+-- the Free Software Foundation; either version 3 of the License, or
+-- (at your option) any later version.
+-- 
+-- This program is distributed in the hope that it will be useful,
+-- but WITHOUT ANY WARRANTY; without even the implied warranty of
+-- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+-- GNU General Public License for more details.
+-- 
+-- You should have received a copy of the GNU General Public License
+-- along with this program; if not, see <https://www.gnu.org/licenses/>.
+--
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity pseudo_mux_fsm_2 is
+    port (
+        RESET   : in    std_logic; -- reset input
+        CLOCK   : in    std_logic; -- clock input
+        S       : in    std_logic; -- control input
+        A,B,C,D : in    std_logic; -- data inputs
+        Q,flags       : out   std_logic  -- data output
+    );
+end pseudo_mux_fsm_2;
+
+architecture arch of pseudo_mux_fsm_2 is
+	type statetype is ( INIT, STATE_A, STATE_B, STATE_C, STATE_D) ;
+	signal state, nextstate : statetype := INIT;
+	signal flag_s : std_logic := '0';
+	
+begin
+	
+	statemachine_seq :process(CLOCK, RESET)
+		begin
+			if ( RESET = '1' and rising_edge(CLOCK) ) then
+				state <= INIT;
+			elsif (rising_edge(CLOCK)) then
+				state <= nextstate;
+			end if;
+	end process;
+	
+	
+	
+--	process(S,flag_s,flag_s_aux,CLOCK)
+--		begin
+--			if(rising_edge(CLOCK)) then
+--				if(S = '1' and flag_s_aux = '0') then
+--					flag_s_aux <= '1';
+--					flag_s <= '1';
+--				elsif (S = '0' and flag_s_aux = '1') then
+--					flag_s_aux <= '0';
+--					flag_s <= '0';
+--				end if;
+--			else
+			--end if;
+	--end process;
+				
+				
+	
+	statemachine_comb: process (A,B,C,D,S,state,flag_s)
+		begin
+			flags <= flag_s;
+			
+			case state is
+			
+				when INIT =>
+					Q <= '0';
+					nextstate <= STATE_A;
+					
+				when STATE_A =>
+					Q <= A;
+					
+					if(S = '1') then
+						nextstate <= STATE_B;
+						--flag_s <= '1';
+					elsif (S = '0') then
+						--flag_s <= '0';
+						nextstate <= state;
+					--else
+						--nextstate <= state;
+					end if;
+					
+				when STATE_B =>
+					Q <= B;
+					
+					if(S = '1') then
+						nextstate <= STATE_C;
+						--flag_s <= '1';
+					elsif (S = '0') then
+						--flag_s <= '0';
+						nextstate <= state;
+					--else
+						--nextstate <= state;
+					end if;
+					
+				when STATE_C =>
+					Q <= C;
+					
+					if(S = '1') then
+						nextstate <= STATE_D;
+						--flag_s <= '1';
+					elsif (S = '0') then
+						--flag_s <= '0';
+						nextstate <= state;
+					--else
+						--nextstate <= state;
+					end if;
+					
+				when STATE_D =>
+					Q <= D;
+					
+					if(S = '1') then
+						nextstate <= STATE_A;
+						--flag_s <= '1';
+					elsif (S = '0') then
+						--flag_s <= '0';
+						nextstate <= state;
+					--else
+						--nextstate <= state;
+					end if;
+					
+				when others =>
+					nextstate <= INIT;
+					
+			end case;	
+		end process;
+end arch;

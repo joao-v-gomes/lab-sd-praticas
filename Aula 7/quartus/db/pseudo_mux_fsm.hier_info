@@ -1,0 +1,15 @@
+|pseudo_mux_fsm
+RESET => state.STATE_D.OUTPUTSELECT
+RESET => state.STATE_C.OUTPUTSELECT
+RESET => state.STATE_B.OUTPUTSELECT
+RESET => state.STATE_A.OUTPUTSELECT
+CLOCK => state~1.DATAIN
+S => statemachine_comb.IN1
+S => statemachine_comb.IN1
+A => Selector4.IN0
+B => Selector4.IN1
+C => Selector4.IN2
+D => Selector4.IN3
+Q << Selector4.DB_MAX_OUTPUT_PORT_TYPE
+
+
