@@ -1,0 +1,15 @@
+|aula10
+x[0] => Mult0.IN7
+x[0] => Mult0.IN3
+x[1] => Mult0.IN6
+x[1] => Mult0.IN2
+x[2] => Mult0.IN5
+x[2] => Mult0.IN1
+x[3] => Mult0.IN4
+x[3] => Mult0.IN0
+y[0] <= <GND>
+y[1] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,42 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Aluno\Desktop\Aula10\simulation\modelsim
+Eaula10
+Z1 w1614048867
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Users\Aluno\Desktop\Aula10\simulation\modelsim
+Z6 8C:/Users/Aluno/Desktop/Aula10/aula10.vhd
+Z7 FC:/Users/Aluno/Desktop/Aula10/aula10.vhd
+l0
+L5
+VPT>DfHYKL8jHS_CLJ_F7e3
+!s100 ?C=BeV6?L1>G3j2Ki>;d_2
+Z8 OV;C;10.1d;51
+31
+!i10b 1
+Z9 !s108 1667864678.849000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/Aluno/Desktop/Aula10/aula10.vhd|
+Z11 !s107 C:/Users/Aluno/Desktop/Aula10/aula10.vhd|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
+Aarch
+R2
+R3
+R4
+DEx4 work 6 aula10 0 22 PT>DfHYKL8jHS_CLJ_F7e3
+l21
+L17
+VNON[]ZFWji;58PiQmG;Ok2
+!s100 N=9A_nP`>59nf?8h=]OHn1
+R8
+31
+!i10b 1
+R9
+R10
+R11
+R12
+R13
